@@ -12,9 +12,19 @@ import random
 import os.path as osp
 from typing import Callable, List, Tuple
 
-root_train = "/content/4VNfoods_Project/datasets/dataset/Train"
-root_val = "/content/4VNfoods_Project/datasets/dataset/Val"
-root_test =  "/content/4VNfoods_Project/datasets/dataset/Test"
+
+
+
+ROOT = "C:/TRAIN/Deep Learning/vietnamese-foods/Images"   # <== đổi nếu cần
+root_train = f"{ROOT}/Train"
+root_val   = f"{ROOT}/Validate"
+root_test  = f"{ROOT}/Test"
+
+
+
+#root_train = "/content/4VNfoods_Project/datasets/dataset/Train"
+#root_val = "/content/4VNfoods_Project/datasets/dataset/Val"
+#root_test =  "/content/4VNfoods_Project/datasets/dataset/Test"
 
 
 Name_food = {

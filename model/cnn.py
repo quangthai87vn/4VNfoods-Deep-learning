@@ -31,7 +31,7 @@ class simpleCNN(nn.Module):
     self.out = nn.Sequential(
       nn.Linear(512*7*7, 128),
       nn.ReLU(inplace = True),
-      nn.Linear(128,4)
+      nn.Linear(128,30)
     )
     if init_weight:
       for m in self.modules():
@@ -81,7 +81,7 @@ class miniVGG(nn.Module):
     self.out = nn.Sequential(
       nn.Linear(512*7*7, 128),
       nn.ReLU(inplace = True),
-      nn.Linear(128,4)
+      nn.Linear(128,30)
     )
 
     if init_weight:
