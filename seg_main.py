@@ -6,7 +6,7 @@ import os
 # os.system(f"cp -r {lib_dir} /content/segment_ai")
 
 from utils.segment_ai.get_data import *
-path = "segments/hoangsonvothanh_4VNFood/v1"
+path = "segments/buiquangthai/v1"
 new_path = "/content/4VNFood" #Doi ten thu muc neu muon
 clone_data()
 extract2fol(path,new_path)
