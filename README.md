@@ -12,7 +12,7 @@
 
 - Đối với bài toán Phân đoạn, tôi sử dụng cấu trúc Unet với các bộ mã hóa là các mô hình được đào tạo trước để có được kết quả tốt nhất.
 
-- I use Wandb to track and compare experiments: [Classification](https://wandb.ai/harly/classifi_FoodVN?workspace=user-harly), [Segmentation](https://wandb.ai/harly/SegVNFood?workspace=user-harly)
+- Tôi sử dụng Wandb để theo dõi và so sánh các thí nghiệm: [Classification](https://wandb.ai/harly/classifi_FoodVN?workspace=user-harly), [Segmentation](https://wandb.ai/harly/SegVNFood?workspace=user-harly)
 
 ## Cách chạy Project :question:
 ```python
