@@ -1,21 +1,20 @@
-# Classification and Segmentation 4 Vietnamese Foods
-
+# Phân loại và phân đoạn 30 món ăn Việt Nam
 ## Summary
 - Trong dự án này, tôi sử dụng Pytorch để thực hiện phân loại và phân đoạn 4 món ăn phổ biến ở Việt Nam. Ngoài ra, để việc phân đoạn ảnh dễ dàng hơn, tôi đã sử dụng thêm thư viện [Segmentation Pytorch](https://github.com/qubvel/segmentation_models.pytorch)
 
-## Dataset :egg: 
+## Tập dữ liệu :egg: 
 - The data is taken from the dataset [30VNFoods](https://www.kaggle.com/datasets/quandang/vietnamese-foods?fbclid=IwAR2bGtj0pe0SLybywrc5D-uS8ynXwqfDAZO6sTQ8eMLO7wcUP2wYCE4SJWw), this dataset includes 30 dishes and I took 4 dishes: Bánh mì, Phở, Bánh tráng nướng và Cơm tấm
 
   ![Example](https://github.com/Harly-1506/4VNfoods_Project/blob/main/images/image.png "This is a sample image.")
 
-## Models
- - I use a variety of models ranging from MLP to Simple CNN, miniVGG. Pre-trained models such as VGG16, ResNet18
+## Mô hình
+ - Tôi sử dụng nhiều mô hình khác nhau, từ MLP đến CNN đơn giản, miniVGG. Các mô hình được đào tạo trước như VGG16, ResNet18.
 
-- For the Segmentation problem, I use the Unet structure with the encoders being pre-trained models to get the best results. 
+- Đối với bài toán Phân đoạn, tôi sử dụng cấu trúc Unet với các bộ mã hóa là các mô hình được đào tạo trước để có được kết quả tốt nhất.
 
 - I use Wandb to track and compare experiments: [Classification](https://wandb.ai/harly/classifi_FoodVN?workspace=user-harly), [Segmentation](https://wandb.ai/harly/SegVNFood?workspace=user-harly)
 
-## How to run this project :question:
+## Cách chạy Project :question:
 ```python
 git clone https://github.com/Harly-1506/4VNfoods-Deep-learning.git
 
@@ -25,7 +24,7 @@ run classifi_main.py
 #run segmentation
 run seg_main.py
 ```
-**__Note__**: When you run seg_main.py, it takes 8 to 10 minutes to prepare the data
+**__Lưu ý__**: Khi bạn chạy seg_main.py, phải mất 8 đến 10 phút để chuẩn bị dữ liệu
 ## Classification Results
 |     Methods                |     Accuracy    |     Loss        |     Val_Accuracy    |     Val_Loss    |     Test_accuracy    |
 |----------------------------|-----------------|-----------------|---------------------|-----------------|----------------------|
